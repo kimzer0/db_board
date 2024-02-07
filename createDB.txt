@@ -1,0 +1,12 @@
+create database exam;
+use exam;
+create table my_board(
+no int not null auto_increment,
+title varchar(50),
+content text,
+writer varchar(20),
+password varchar(50),
+file varchar(50),
+regdate date,
+primary key(no)
+)DEFAULT CHARSET = utf8;

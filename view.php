@@ -90,6 +90,12 @@
                         <div class="contents-container"><?=$row["content"]?></div>
                     </td>
                 </tr>
+                <? if(!empty($row["file"])) { ?>
+                <tr>
+                    <th scope="row" width="20%" class="text-center">File</th>
+                    <td><a href="download.php?filename=<?=$row["file"]?>"><?=$row["file"]?></a></td>
+                </tr>
+                <? } ?>
                 </tbody>
             </table>
         </div>

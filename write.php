@@ -45,7 +45,7 @@
     <h1>Write</h1>
     <hr>
     <div class="container">
-		<form action="action.php" method="POST">
+		<form action="action.php" method="POST" enctype="multipart/form-data">
             <label for="title">Title</label>
             <input type="text" name="title" placeholder="Title Input">
 
@@ -57,6 +57,9 @@
 
             <label for="password">Password</label>
             <input type="password" name="password" placeholder="Password Input">
+
+            <label for="file">File</label>
+			<input type="file" class="form-control" name="userfile">
 
             <div class="btns">
                 <button type="submit">Write</button>

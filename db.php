@@ -2,6 +2,7 @@
 	header("Content-Type: text/html; charset=UTF-8;");
 
 	$tb_name = "my_board";
+	$upload_path = "upload";
 
 	function mysql_conn() {
 		$host = "127.0.0.1";
